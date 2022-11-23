@@ -50,3 +50,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+.main__teasers.main__section article:not(:last-child) {
+  margin-right: 25px;
+}
