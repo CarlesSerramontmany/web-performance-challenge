@@ -17,6 +17,12 @@ const dynamicContent = () => {
   // mock content delay
   marqueeBar.innerHTML = CONTENT_BREAKING_NEWS;
 
+  // create dynamic content
+  teasers.forEach((teaser, index) => {
+    teaser.innerHTML = CONTENT_ARTICLE_TEASERS[index];
+  });
+};
+
 const layoutTrashing = (n) => {
   for (let i = 0; i < n; i++) {
     const container = document.querySelector('header');
@@ -24,19 +30,12 @@ const layoutTrashing = (n) => {
   }
 };
 
-const JSblocking = () => {
-  let n = 1000000;
-  while (n) { n--;}
-}
-
 const initApp = () => {
   const lazyLoadInstance = new LazyLoad();
   
   layoutTrashing(20);
   dynamicContent();
   setTimeout(() => console.log('Hello World!'), 3000);
-  JSblocking();
-  // cookieLayerInit();
   lazyLoadInstance.update();
 };
 
