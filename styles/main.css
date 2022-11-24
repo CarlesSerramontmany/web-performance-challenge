@@ -54,3 +54,13 @@ body {
 .main__teasers.main__section article:not(:last-child) {
   margin-right: 25px;
 }
+
+.hero__image {
+  width: 394px;
+  height: 195px;
+}
+
+.card__img {
+  width: 338px;
+  height: 225px;
+}
