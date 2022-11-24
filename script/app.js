@@ -5,10 +5,9 @@ const CONTENT_ARTICLE_TEASERS = [
   "This is an article about third party that happened this weekend" ];
 
 function acceptCookies() {
-  //document.body.classList.remove('no-scroll');
+  document.body.classList.remove('no-scroll');
   const element = document.getElementById("cookie-vue");
   element.remove();
-  // document.querySelector('.cookieLayer__base').classList.add('cookieLayer__base--accepted');
 };
 
 const dynamicContent = () => {
